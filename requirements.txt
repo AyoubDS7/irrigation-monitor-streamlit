@@ -1,0 +1,10 @@
+streamlit
+firebase-admin
+pandas
+plotly
+requests
+streamlit-autorefresh
+numpy
+openmeteo-requests
+requests-cache
+retry-requests
