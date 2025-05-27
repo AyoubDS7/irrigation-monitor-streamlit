@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "911535585380",
+    "firebase_url": "https://sensordatairrigation-default-rtdb.firebaseio.com",
+    "project_id": "sensordatairrigation",
+    "storage_bucket": "sensordatairrigation.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911535585380:android:608f7280f01a353f3d8771",
+        "android_client_info": {
+          "package_name": "com.ayoub.irrigation_monitor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW5QRYRw51kd_eyjT_70dfvc5uwG33hGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911535585380:android:3621111b7cbab3423d8771",
+        "android_client_info": {
+          "package_name": "com.example.irrigation_monitor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW5QRYRw51kd_eyjT_70dfvc5uwG33hGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
