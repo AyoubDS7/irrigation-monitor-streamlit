@@ -70,7 +70,7 @@ model_rf = joblib.load("random_forest_irrigation.pkl")
 
 def process_and_save_data():
     try:
-        lat, lon = 31.638817, -8.0118352
+        lat, lon = 30.47028, -8.87695
         current_hour = datetime.utcnow().hour
 
         # Get weather and open meteo data
@@ -81,7 +81,7 @@ def process_and_save_data():
             return "Weather/API error", 500
 
         # Prepare features for prediction
-        features = np.array([[meteo_data["soil_moisture_0_to_1cm"]*100,
+        features = np.array([[meteo_data["soil_moisture_27_to_81cm"]*100,
                               meteo_data["soil_temperature_6cm"],
                               meteo_data["relative_humidity_2m"],
                               weather_data["temperature"],
@@ -95,7 +95,8 @@ def process_and_save_data():
             "api_last_update": weather_data["last_update"],
             "et0": float(meteo_data["et0_fao_evapotranspiration"]),
             "soil_temp": float(meteo_data["soil_temperature_6cm"]),
-            "soil_moisture_api": float(meteo_data["soil_moisture_27_to_81cm"]),
+            "soil_moisture_depth": float(meteo_data["soil_moisture_27_to_81cm"]),
+            "soil_moisture_surface": float(meteo_data["soil_moisture_0_to_1cm"]),
             "env_moisture_api": float(meteo_data["relative_humidity_2m"]),
             "prediction": prediction
         }
